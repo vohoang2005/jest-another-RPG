@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vohoang2005/jest-another-RPG#readme",
   "dependencies": {
+    "inquirer": "^8.2.0",
     "jest": "^27.4.6"
   }
 }
