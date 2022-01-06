@@ -48,3 +48,12 @@ test('checks if player is alive or not', () => {
 
   expect(player.isAlive()).toBeFalsy();
 });
+
+test('adds a potion to the inventory', () => {
+  const player = new Player('Dave');
+  const oldCount = player.inventory.length;
+
+  player.addPotion(new Potion());
+
+  expect(player.inventory.length).toBeGreaterThan(oldCount);
+});
